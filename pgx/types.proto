@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package pgx;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/rmartins-tractian/protoc-gen-go-pgx/pgx;pgx";
+
+message Timestamp { google.protobuf.Timestamp At = 1; }
+
+message UUID { string Item = 1; }

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example;
+
+import "pgx/types.proto";
+
+option go_package = "github.com/rmartins-tractian/protoc-gen-go-pgx/example";
+
+message Hello {
+  pgx.UUID uuid = 1;
+  pgx.Timestamp createdAt = 2;
+}
